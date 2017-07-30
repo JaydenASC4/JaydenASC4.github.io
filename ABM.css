@@ -6761,11 +6761,13 @@ button.close {
 }
 
 .card-title{
-    text-align: center;
+   margin-left: 50%;
+    margin-right:  50;
 }
 
 .card-text{
-    text-align: center;
+    margin-left: 50%;
+    margin-right:  50;
 }
 
 .btn-primary{   
