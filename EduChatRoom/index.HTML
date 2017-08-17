@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAaWt0NSV2l-zeNPZDolsqenxfgpn8UJIQ",
+    authDomain: "educationtutormsgbox.firebaseapp.com",
+    databaseURL: "https://educationtutormsgbox.firebaseio.com",
+    projectId: "educationtutormsgbox",
+    storageBucket: "educationtutormsgbox.appspot.com",
+    messagingSenderId: "1057643565146"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="./eduJqery.js"></script>
+<link rel="stylesheet" href="eduStyle.css">
+
+</HEAD>
+
+
+<BODY>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="financeCata.HTML">Financial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="educationCata.HTML">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resourceCata.HTML">Resources</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+
+<h2>In this section we provide help to all the students in need of help with homework, studying for test or even full tutorships some of our services are provided below</h2>
+
+<h3>This section you can ask us and many of our trusted and registered tutors question about certain tasks and subjects, or even if you need help with homework or tests this is the place to ask.</h3> 
+    <h1>The All Star Help Edu Chat Room</h1>
+
+    <!--Will be populated with messages-->
+    <div class="allMessages">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="textContainer">
+                <div>
+                    <p>Your name:</p><input id="name" type="text">
+                </div>
+                <div>
+                    <p>Message:</p><input id="message" type="text">
+                </div>
+            </div>
+            <div class="GObutton">
+                <input type="reset" onclick="updateDB();" value="Submit/Update">
+            </div>
+        </form>
+    </div>
+
+<CENTER>
+    <h2>Our Three Most Trusted tutors</h2>
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="self.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Cyril Kuhns</h2>
+    <p class="card-text">Cyril Kuhns, a math and computer science major and Instructor for all star code pittsburgh is one of our most trusted tutors. He provides a learning experience that truly captivatees you and creates interest within you.</p>
+    <button class="btn btn-primary"><a href="http://cxkuhns.biz/">Cyril's Website</a></button>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="Thomas_The_Tank_Engine.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Thomas Krill</h2>
+    <p class="card-text">Thomas Krill, Currently In college majoring in computer science and a TA at All Star Code. Thomas makes thing very clear and easy to understand to the people he teaches. If you choose him as your tutor prepare for a clear and straight to the point learning.</p>
+    <button  class="btn btn-primary"><a href="https://www.linkedin.com/in/thomas-krill/">Thomas's Website</a></button>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="izi_360.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Izi Sobek</h2>
+    <p class="card-text">Izi Sobek, A design major and TA at all star code. Izi's specialty is he is good at showing you hands on how to do what you need to do. Izi encourages people to try new things outside of their comfort zone but will never tell you to complete the impossible and he will walk you through it every step of the way. </p>
+    <button class="btn btn-primary" type="submit" href="http://cxkuhns.biz/">Izi's Website</button>
+  </div>
+</div>
+</CENTER>
+
+
+</BODY>
+
+</HTML>
